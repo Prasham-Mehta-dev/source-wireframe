@@ -1,0 +1,307 @@
+/*========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Box Model Hack */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/*
+  ========================================
+  BASE COLORS FONTS & BACKGROUND
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: rgb(245,249,253);
+  color: rgb(40,64,86);
+}
+
+p, li, button, .tagline{
+  font-size: 2rem;
+  color: rgba(123,147,168,.8);
+  text-decoration: none;
+}
+
+.tagline{
+  font-variant: all-small-caps;
+  /* text-transform: uppercase;
+  font-size: 1.5rem; */
+  
+}
+
+h2{
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 6rem;
+  /* padding: 1% 0; */
+  margin-bottom: 2rem;
+}
+
+.logo{
+  font-weight: 600;
+  font-size: 2.5rem;
+  float: left;
+}
+
+li, button{
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+
+h3, .link{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.link{
+  font-size: 2rem;
+}
+
+.card p, p{
+  line-height: 3rem;
+  padding: 0 0 2.5rem 0;
+}
+
+/*
+  ========================================
+  LAYOUT MAIN - PADDIN N STUFF
+  ========================================
+*/
+
+header, nav, button, section, h1{
+  margin: 0 auto;
+}
+
+header{
+  width: auto;
+  padding: 1% 2% 3% 2%;
+  clear: both;
+}
+
+nav{
+  float: left;
+  width: 80%;
+  padding: 1% 15%;
+  text-align: center;
+}
+
+.small-wrapper{
+  width: 10%;
+  height: auto;
+  float: left;
+  display: inline;
+}
+
+.main-content{
+  width: 100%;
+  height: auto;
+  padding: 1% 0 1% 4%;
+}
+
+.main-info{
+  float: left;
+  width: 50%;
+  padding: 5% 15% 0 5%;
+}
+
+.search-wrapper, p{
+  clear: both;
+}
+
+.image-wrapper{
+  float: right;
+  width: 50%;
+  height: 40vw;
+  contain: content;
+}
+
+.image{
+  height: 100%;
+  min-height: 30rem;
+  float: right;
+}
+
+.info-card{
+  width: 25%;
+  height: auto;
+  padding: 0 1%;
+  float: left;
+}
+
+.info-box{
+  margin: 5% 6rem 2% 6rem;
+  float: left;
+}
+
+main{
+  clear: both;
+}
+
+.footwrapper{
+  float: left;
+  width: 100vw;
+  background: white;
+  height: 100%;
+  margin: 7rem 0 0 6rem;
+}
+
+.footwrapper h2,
+.footwrapper p{
+  width: 50%;
+}
+
+.one{
+  margin-bottom: 3rem;
+  /* margin-right: 0.5rem; */
+}
+
+/*
+========================================
+LAYOUT - NITTY GRITTY
+========================================
+*/
+
+.small-wrapper h1{
+  padding: 2.5% 0;
+}
+
+li{
+  display: inline-block;
+  padding: 0 3rem;
+}
+
+header button{
+  float: right;
+}
+
+input, main button{
+  float: left;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+  SPECIFIC ELEMENT STYLING
+  ========================================
+*/
+
+.small-icon{
+  height: 4rem;
+}
+
+button{
+  background: rgb(44,69,91);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+input{
+  background-color: #e1e9f0;
+  border: 0 solid #e1e9f0;
+  border-radius: 3px;
+  padding: 1.4rem 13rem 1.4rem 1rem; 
+  margin-bottom: 2rem;
+}
+
+/* .grayspace{
+  margin: 6rem;
+  background: rgb(220,228,236);
+  width: 100%;
+  border: 2px red solid;
+} */
+
+/*
+  ========================================
+  INTERATCIVE STUFFS
+  ========================================
+*/
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color:#a6b9c6;
+  transition: 0.3s;
+}
