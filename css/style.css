@@ -104,7 +104,6 @@ p, li, button, .tagline{
   font-variant: all-small-caps;
   /* text-transform: uppercase;
   font-size: 1.5rem; */
-  
 }
 
 h2{
@@ -174,13 +173,13 @@ nav{
 .main-content{
   width: 100%;
   height: auto;
-  padding: 1% 0 1% 4%;
+  padding: 1% 0 1% 0;
 }
 
 .main-info{
   float: left;
-  width: 50%;
-  padding: 5% 15% 0 5%;
+  width: 40%;
+  padding: 5% 0 0 9%;
 }
 
 .search-wrapper, p{
@@ -196,7 +195,7 @@ nav{
 
 .image{
   height: 100%;
-  min-height: 30rem;
+  min-height: 20rem;
   float: right;
 }
 
@@ -208,7 +207,7 @@ nav{
 }
 
 .info-box{
-  margin: 5% 6rem 2% 6rem;
+  margin: 5% 6rem 2% 12rem;
   float: left;
 }
 
@@ -216,12 +215,23 @@ main{
   clear: both;
 }
 
-.footwrapper{
+.footer{
   float: left;
-  width: 100vw;
+  width: 100%;
   background: white;
   height: 100%;
-  margin: 7rem 0 0 6rem;
+  padding: 7rem 0 0 13rem;
+}
+
+.footerwrapper{
+  height: 70%;
+}
+
+.grayscale{
+  background: rgb(220,228,236);
+  width: 70%;
+  height: 10rem;
+  margin-top: 2%;
 }
 
 .footwrapper h2,
@@ -284,12 +294,7 @@ input{
   margin-bottom: 2rem;
 }
 
-/* .grayspace{
-  margin: 6rem;
-  background: rgb(220,228,236);
-  width: 100%;
-  border: 2px red solid;
-} */
+
 
 /*
   ========================================
